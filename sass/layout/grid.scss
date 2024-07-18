@@ -1,0 +1,36 @@
+.row {
+    display: flex; // Use Flexbox for layout
+    max-width: $grid-width; // Set max width for the row
+    margin: 0 auto; // Center the row
+    flex-wrap: wrap; // Allow wrapping of columns
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical; // Space between rows
+    }
+    .col-1-of-2 {
+        margin-right: $gutter-horizontal;
+    }
+}
+
+.col-1-of-2,
+.col-2-of-2 {
+    flex: 1; 
+    
+}
+.col-1-of-4,
+.col-2-of-4,
+.col-3-of-4,
+.col-4-of-4 {
+    flex: 0 0 25%; // Each column takes 25% of the row
+    max-width: 25%; // Ensure the column does not exceed 25% width
+    padding: 2rem;
+    
+}
+.col-1-of-3,
+.col-2-of-3,
+.col-3-of-3 {
+    flex: 0 0 33.33%; // Each column takes 33.33% of the row
+    max-width: 33.33%; // Ensure the column does not exceed 33.33% width
+    padding: 2rem; // Add padding to the card
+    box-sizing: border-box; // Include padding in the element's total width
+}

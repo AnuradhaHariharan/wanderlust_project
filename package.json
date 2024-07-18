@@ -1,0 +1,21 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "landing page for wanderlust",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Anu",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "live-server": "^1.2.2"
+  }
+}
