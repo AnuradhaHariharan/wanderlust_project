@@ -115,4 +115,18 @@ transition: all .5s;
 &::after{top: 1rem;}
 }
 
+&__checkbox:checked + &__btn &__icon {
+    background-color: transparent;
+}
+&__checkbox:checked + &__btn &__icon::before {
+    top: .1rem;
+    transform: rotate(45deg);
+  
+}
+&__checkbox:checked + &__btn &__icon::after {
+    top: .1rem;
+    transform: rotate(-45deg);
+}
+
+
 }

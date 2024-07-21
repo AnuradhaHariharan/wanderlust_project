@@ -784,6 +784,17 @@ body {
 .navigation__icon::after {
   top: 1rem;
 }
+.navigation__checkbox:checked + .navigation__btn .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::before {
+  top: 0.1rem;
+  transform: rotate(45deg);
+}
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::after {
+  top: 0.1rem;
+  transform: rotate(-45deg);
+}
 
 /*!
  * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
