@@ -5,3 +5,28 @@
         clear: both;
     }
 }
+
+/*
+0-600-phone
+600-900 -tablet potrait
+900-1200- tab-landscape
+1200-1800-out normal styles apply 
+1800px + -big desktops
+1 em-16px
+*/
+
+@mixin responsive($break-point){
+    @if $break-point==phone{
+        @media(max-width: 37.5em){ @content}; //600px
+    }
+    @if $break-point==tab-potrait{
+        @media(max-width: 56.25em){ @content}; //900px
+    }
+    @if $break-point==tab-landscape{
+        @media(max-width: 75em){ @content}; //1200px
+    }
+    @if $break-point==big-desktop{
+        @media(min-width: 112.5em){ @content}; //1800 plus
+    }
+
+}

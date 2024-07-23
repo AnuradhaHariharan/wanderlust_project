@@ -18,6 +18,11 @@
         border-top: 1px solid $color-grey;
         padding-top: 2rem;
         display: inline-block;
+        @include responsive(tab-potrait){
+          display: flex;
+          justify-content: center;
+        }
+    
     }
 
     &__list {
@@ -55,5 +60,11 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+        @include responsive(tab-potrait){
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+    
     }
 }

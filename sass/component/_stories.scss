@@ -43,6 +43,9 @@
     }
     &__text {
         transform: skewX(12deg); 
+        @include responsive(phone){
+            transform: skewX(1deg);   
+        }
     }
     &:hover {
         .stories__caption {

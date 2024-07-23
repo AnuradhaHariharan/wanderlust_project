@@ -34,3 +34,29 @@
     padding: 2rem; // Add padding to the card
     box-sizing: border-box; // Include padding in the element's total width
 }
+
+@include responsive(tab-potrait) {
+    .col-1-of-4,
+    .col-2-of-4,
+    .col-3-of-4,
+    .col-4-of-4 {
+        flex: 0 0 100%; // Each column takes 50% of the row
+        max-width: 100%; // Ensure the column does not exceed 50% width
+        padding: 1rem; // Adjust padding for smaller screens
+    }
+
+    .col-1-of-3,
+    .col-2-of-3,
+    .col-3-of-3 {
+        flex: 0 0 100%; // Each column takes 100% of the row
+        max-width: 100%; // Ensure the column does not exceed 100% width
+        padding: 1rem; // Adjust padding for smaller screens
+    }
+
+    .col-1-of-2,
+    .col-2-of-2 {
+        flex: 0 0 100%; // Each column takes 100% of the row
+        max-width: 100%; // Ensure the column does not exceed 100% width
+        padding: 1rem; // Adjust padding for smaller screens
+    }
+}

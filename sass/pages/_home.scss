@@ -31,8 +31,13 @@ text-align: center;
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation: moveInLeft 1.5s ease-out;
+ 
+    @include responsive(phone) {
+        font-size: 6rem;
+        letter-spacing: 1rem;
+    }
 }
 .heading-primary--sub {
     display: block;
@@ -40,12 +45,21 @@ text-align: center;
     letter-spacing: 1.74rem;
     font-weight: 700;
     animation: moveInRight 1.5s ease-out;
+
+    @include responsive(phone) {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
 }
 
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 10rem;
     margin-top: -20vh;
+
+    @include responsive(tab-potrait){
+     padding: 37rem 3rem;
+    }
 }
 
 .section-feature {
@@ -57,6 +71,12 @@ text-align: center;
     
     & >*{
         transform: skewY(7deg);
+   }
+   @include responsive(tab-potrait){
+    margin-top: 13rem;
+   }
+   @include responsive(phone){
+margin-top: -11rem;
    }
 
 }
